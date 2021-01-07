@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif+JP:wght@300&family=PT+Serif&family=Roboto:wght@100&display=swap');
+
+//font-family: 'Noto Sans JP', sans-serif;
+//font-family: 'Noto Serif JP', serif;
+//font-family: 'PT Serif', serif;
+//font-family: 'Roboto', sans-serif;
+
+html, body {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 auto;
+    margin: 0;
+    max-width: 1600px;
+    padding: 0;
+    color: black;
+}
+h1 {
+    font-family: 'PT Serif', serif;
+    letter-spacing: 6px;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.875em;
+    font-family: 'PT Serif', serif;
+}
+a:hover {
+    cursor: pointer;
+}
+ul {
+    list-style-type: circle;
+    margin: 0;
+}
+.wrapper-header {
+    margin-left: 13.25em;
+    margin-top: 3.125em;
+}
+.svg {
+    width: 15px;
+    height: 15px;
+    padding: 0.5em;
+    margin: 0em 0.4em;
+
+    border: 1px solid white;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+.header {
+    padding: 0.5em 1em;
+    height: 50em;
+    background-image: url('D:/GitHub/monticello/monticello/img/bg.png');
+    background-size: cover; 
+    //background-size: 1400px;
+    background-position: center;
+    color: white;
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        height: 3em;
+        width: 13em;
+    }
+    &__menu {
+        display: flex;
+        padding: 0.5em;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 5em;
+
+        &__item {
+            padding: 0.4em;
+            margin:  0 2em;
+        
+            &:hover {
+                list-style-type: disc;
+            }
+        }
+    }  
+    &__social {
+        display: inline-block;
+        margin-left: 3em;
+    }
+    &__title {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 17em;
+        margin-right: 9em;
+        text-align: center;
+    
+        p {
+            font-size: 1.125em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    &__nav-page {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 3em;
+        list-style-type: circle;
+
+        li {
+            margin: 1.5em 0;
+
+            &:hover {
+                list-style-type: disc;
+            }
+        }
+    }
+    &__button {
+        position: absolute;
+        bottom: -2%;
+        right: 50%;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.page {
+    padding: 2em 0;
+    position: relative;
+    
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__title {
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'PT Serif', serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-stretch: expanded;
+        
+        margin: 0;
+        margin-top: 1.5em;
+        padding: 0;
+        text-align: center;
+
+        hr {
+            width: 3em;
+            background-color: black;
+        }
+    }
+    
+    &__card {
+        position: absolute;
+        width: 30em;
+        height: 22.5em;
+        top: 35%;
+        right: 0;
+        margin-right: 8em;
+        
+        &__subtitle {
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+
+            .top {
+                font-size: 1.375em;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 0;
+                margin: 0;
+            }
+            .main {
+                font-size: 2.75em;
+                font-weight: 500;
+                font-family: 'PT Serif', serif;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+
+            }
+        }
+        &__text {
+            padding: 0;
+            margin: 0;
+            width: 27em;
+            opacity: 0.7;        
+
+        }
+        &__btn {
+            width: 12em;
+            height: 3em;
+            opacity: 0.7;
+            margin-top: 1.8em;
+
+            font-size: 0.875em;
+            text-transform: uppercase;
+            background-color: white;
+            border: 1px solid black;
+            
+            font-size: 0.8em;
+        }
+        &__location {
+            font-style: italic;
+            margin-left: 2em;
+            margin-top: 4em;
+            position: relative;
+            opacity: 0.7;
+
+            &::before {
+                content: url("D:/GitHub/monticello/monticello/img/map-pin.svg");
+                display: inline-block;
+                width: 10px;
+                height: 10px;    
+                position: absolute;
+                left: -6%;
+            }
+        }
+    }    
+}
+
+#info {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    img {
+        width: 600px;
+        height: 450px;
+    }
+     .page__card {
+        top: 35%;
+        right: 0;
+        margin-right: 10em;
+    }  
+    .img__photo {
+        position: absolute;
+        top: 37%;
+        left: 10%;
+    }    
+}
+
+#info_2 {
+    height: 50em;
+    margin-top: 0em;
+    padding-top: 0em;
+
+    img {
+        width: 600px;
+        height: 450px;
+    }
+    .page__card {
+        margin-left: 10em;
+    }
+    .img__blue {
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+    .img__photo {
+        position: absolute;
+        top: 25%;
+        right: 10%;
+    }
+    .page__card {
+        position: absolute;
+        left: 0;
+        top: 30%;
+    }
+
+    .page__location {
+        font-style: italic;
+        margin-left: 2em;
+        position: relative;
+
+        &::before {
+            content: url("D:/GitHub/monticello/monticello/img/map-pin.svg");
+            display: inline-block;
+            width: 10px;
+            height: 10px;    
+            position: absolute;
+            left: -6%;
+        }
+    }
+}
+
+#news {
+    height: 62em;
+    background-image: url('D:/GitHub/monticello/monticello/img/bg-news.png');
+    background-size: cover;
+
+    color: white;
+    position: relative;
+
+    hr {
+        background-color: white;
+    }
+}
+
+.swiper-container {
+    width: 90%;
+    height: 100%;  
+    margin-top: 5em;
+      
+    .swiper-slide.slide {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        
+        color: black;
+    }
+
+    .slide__cards {
+        display: block;
+        background-color: white;        
+    }
+}
+
+#gallery {
+    height: 50em;
+    background-color: white;
+    
+    position: relative;
+
+    .page__img {
+        padding: 0.2em;
+    }
+    .first-img {
+        position: absolute;
+        left: 10%;
+
+        padding: 0.2em;
+    }
+    .img-container {
+        display: flex;
+        flex-flow: row nowrap;
+
+        position: relative;
+
+        &__column {
+            display: flex;
+            flex-flow: column nowrap;
+                        
+            position: absolute;
+            right: 32%;
+        }
+        &__column-first {
+            display: flex;
+            flex-flow: column nowrap;
+            
+            position: absolute;
+            right: 12%;
+        }       
+    }
+}
+#gallery-btn {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
+#address {
+    height: 40em;
+    background-color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 40em;
+}
+
+footer {
+    padding: 0.5em 1em;
+    height: 30em;
+    background-image: url('D:/GitHub/monticello/monticello/img/bg-footer.png');
+    background-size: cover; 
+    background-position: center;
+    color: white;
+
+    .content {
+        display: flex;
+        margin-left: 27em;    
+        margin-top: 16em;
+        
+        position: relative;
+
+        .header__social{
+            margin-left: 20em;
+        }
+    }
+
+    .footer__subtitle {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 5em;
+        opacity: 0.8;
+
+        .made {
+            margin-right: 1em;
+            border-right: 2px solid rgb(214, 212, 212);
+            padding-right: 1em;
+        }
+    }
+}
+
+.card-form {
+    height: 24em;
+    width: 40em;
+    background-image: url('D:/GitHub/monticello/monticello/img/bg-form-card.png');
+    background-size: cover; 
+    background-position: center;
+    color: black;
+
+    position: absolute;
+    padding: 1em 2em;
+
+    top: 70%;
+    left: 30%;
+
+    .page__title {
+        margin-bottom: 0;
+        p {
+            margin-bottom: 0;
+            padding-bottom: 0.4em;
+        }
+    }
+
+    .page__content {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row nowrap;
+
+        .form {
+            margin: 1em 0;
+            margin-left: 3em;
+
+            position: relative;
+            padding: 0;
+            
+            input[type="text"] {
+                border: 1px solid white;
+                width: 16em;
+                border-bottom: 2px solid gray;
+                opacity: 0.8;
+                padding: 1em;            
+            }
+
+            #form-btn {
+                position: absolute;
+                right: 4em;
+                bottom: 1.5em;
+                font-size: 0.7em;
+            }
+
+            input:focus {
+                border-bottom: 2px solid black;
+            }
+        }        
+
+        .info {
+            width: 30em;
+            display: flex;
+            flex-flow: column nowrap;
+            font-family: 'Roboto', sans-serif;
+            opacity: 0.9;
+            font-weight: 300;
+
+            &__item {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items : center;
+            }
+        }
+    }
+}
